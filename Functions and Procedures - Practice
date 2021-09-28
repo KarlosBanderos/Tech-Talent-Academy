@@ -1,0 +1,22 @@
+#Karl Phan
+#Sept 2021
+#Para/Argument Practice
+#Task 1 - Procedure that passes a number and cubes (**3) the Value
+#Task 2 - Take 2 numbers and give the 1st number to the power of the 2nd number
+
+#Task 1
+def output(number):
+  print(number,"cubed =", number**3) #This will print a number and it's cubed value
+
+output(4)
+output(5)
+
+print(" ")
+
+#Task 2
+
+def output(number,power):
+  print(number,"to the power of ",power,"= ",number**power)
+  # This will pass 2 numbers and add them together
+
+output(3,4)
