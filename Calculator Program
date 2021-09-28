@@ -5,7 +5,7 @@
 
 #Task 3
 def calculator():
-  global number1 #global allows the variable to pass between procedures
+  global number1 #global allows the variable to pass between procedures (cycle)
   global number2
 
   print("\n***Welcome to the Calculator***")
@@ -13,19 +13,43 @@ def calculator():
   number1=int(input("Enter the first number "))
   number2=int(input("Enter the second number "))
 
-  calculator=input ("What would you like to do\na. Addition\nb. Subtractions\n")
+  calculator=input ("What would you like to do\na. Add\nb. Subtract\nc. Divide\nd. Multiply\ne. Power of\nf. Square\ng. Quit")
 
   if calculator=="a":
     add()
-  else:
+  elif calculator =="b":
     sub()
-  
+  elif calculator =="c":
+    divide()
+  elif calculator =="d":
+    multiply()
+  elif calculator =="e":
+    power()
+  elif calculator =="f":
+    square()
+  elif calculator =="g":
+    quit()
 
 def add():
   print(number1,"+",number2,"=",number1+number2)
-  calculator()
+  calculator()   
 def sub():
   print(number1,"-",number2,"=",number1-number2)
   calculator() 
-
+def divide():
+  print(number1,"/",number2,"=",number1/number2)
+  calculator() 
+def multiply():
+  print(number1,"*",number2,"=",number1*number2)
+  calculator()
+def power():
+  print(number1,"**",number2,"=",number1**number2)
+  calculator() 
+def square():
+  print(number1,"*",number1,"=",number1*number1)
+  calculator()
+def Quit():
+  print(Goodbye)
+  exit()
+  calculator()
 calculator() 
