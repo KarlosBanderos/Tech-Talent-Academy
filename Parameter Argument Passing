@@ -3,8 +3,23 @@
 #Para/Argument passing
 
 def my_function(fname):
-  print(fname +" Welcome") #send my function into code
+  print(fname +" Welcome") #send my_function into code procedure
   
 my_function("Bob")
 my_function("Harry")
 my_function("Naomi")
+
+print(" ")
+
+def output(number):
+  print(number,"squared =", number*number) #This will print a number and it's square value
+
+output(4)
+output(45)
+
+print(" ")
+
+def output_m(number1,number2):
+  print(number1,"+",number2,"=", number1+number2) # This will pass 2 numbers and add them together
+
+output_m(3,4)
