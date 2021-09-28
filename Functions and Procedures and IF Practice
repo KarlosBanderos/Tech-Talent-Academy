@@ -1,0 +1,23 @@
+#Karl Phan
+#Sept 2021
+#Driving License
+
+#Task 1 - Procedure that checks if someone can drive in the UK using FUNCTION,PROCEDURE and IF
+def drive():
+  age=int(input("How old are you?\n"))
+  license=input("Do you hold a driving license\n").upper() #Makes response uppercase
+  if age >= 17 and license=="Y":
+    print("You are able to learn to drive in the UK\n")
+  else:
+    print("You are either too young or need to apply for a license\n")
+drive()
+
+#Task 2 - Procedure to check if some can have food in a bar i.e. Ask if they want food and above 18
+def drink():
+  age=int(input("How old are you?\n"))
+  food=input("Are you having food\n").upper() #Makes response uppercase
+  if age >= 18 and food=="Y":
+    print("You are able to have food and drink in the pub\n")
+  else:
+    print("You are too young to eat or drink on these premises\n")
+drink()
