@@ -1,0 +1,9 @@
+#Karl Phan
+#Sept 2021
+#Guess the number
+
+def username():
+  name=input("Hello, what is your name? : ")
+  print("Hello", name)
+
+username()
