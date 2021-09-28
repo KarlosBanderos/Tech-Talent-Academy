@@ -1,0 +1,31 @@
+#Karl Phan
+#Sept 2021
+#Calculator Program
+#Task 3 - Write a calculator program which will ask for 2 numbers then offer a menu with choice of operators
+
+#Task 3
+def calculator():
+  global number1 #global allows the variable to pass between procedures
+  global number2
+
+  print("\n***Welcome to the Calculator***")
+  print(" ")
+  number1=int(input("Enter the first number "))
+  number2=int(input("Enter the second number "))
+
+  calculator=input ("What would you like to do\na. Addition\nb. Subtractions\n")
+
+  if calculator=="a":
+    add()
+  else:
+    sub()
+  
+
+def add():
+  print(number1,"+",number2,"=",number1+number2)
+  calculator()
+def sub():
+  print(number1,"-",number2,"=",number1-number2)
+  calculator() 
+
+calculator() 
