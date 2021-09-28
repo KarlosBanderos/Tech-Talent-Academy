@@ -1,0 +1,16 @@
+#Karl Phan
+#Sept 21
+#Motorbike Calculator
+#A motorbike costs £2000 and loses 10% of it's value every year, print the bikes value until it falls below £1000 
+
+print("\n\n\tMotorbike Calculator")
+print("your motorbike is worth £2000")
+print("It will lose 10% every year\n")
+
+year=1
+m_price=2000
+
+while m_price>1000:
+  m_price=m_price*.9
+  print("price after year ",year," : £",round(m_price,2)) #use round to 2dp
+  year +=1 #adds 1 to the year
