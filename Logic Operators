@@ -1,0 +1,29 @@
+#Karl Phan
+#Sept 2021
+#Logic Operators
+
+# AND operator
+age=int(input("What is your age?\n "))
+if (age > 17 and age < 60):            
+  print("You can learn to drive")
+else:
+  print("You cannot learn to drive")
+print(" ")
+
+# OR operator
+number=int(input("Enter a number smaller than 10\n "))
+if (number==1 or number==3 or number==5):             
+  print("You entered an odd number\n")
+else:
+  print("You entered an even number\n")
+
+# Boolean and NOT operator
+shoePrice=int(input("How much are your shoes?\n"))
+if (shoePrice <9.99):
+  cheapShoe=True             
+else:
+  cheapShoe=False #Boolean
+if (not(cheapShoe)):  
+  print("These shoes are expensive")
+else:
+  print("These shoes are cheap ")
