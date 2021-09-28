@@ -1,0 +1,15 @@
+#Karl Phan
+#Sept 2021
+#Number Functions
+#Function to ask user name, then ask for 4 separate number variables, then display the total
+
+user=input("What is your name?")
+
+num_1 = int(input("Enter the first number: "))
+num_2 = int(input("Enter a number: "))
+num_3 = int(input("Enter a number: "))
+num_4 = int(input("Enter a number: "))
+
+sum_num = num_1 + num_2 + num_3 + num_4
+
+print("The sum of inputs are " + str(sum_num))
