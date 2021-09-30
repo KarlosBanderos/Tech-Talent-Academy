@@ -1,0 +1,35 @@
+#Karl Phan
+#Sept 2021
+#Guess the number extended
+
+import random #imports the random library
+
+print("\n\tHello and welcome to 'Guess the Number' game \n\n")
+
+myName = input("Hello! What is your name?\n ")
+number = random.randint(1,10) #random number between 1-10
+
+def main():
+    guesses=0 #sets the guess counter to zero
+    print(number) #shows the answer
+    print("Well, " + myName + " I am thinking of a number between 1 and 10.")
+
+    while guesses<=10:  #while the player has less than 6 guesses
+      guesses = guesses+1#adds 1 to the number of guesses
+      guess = int(input("\nTake a guess:")) #ask user for their guess and convert it to an interger
+
+      if guess < number:
+        print("\nYour guess is too low")
+
+      if guess > number:
+        print("\nYour guess is too high")
+
+      if guess == number:
+        print("Good job, "+myName+" you guessed my numnber")
+        print("Thank you for playing")
+        break #if user guesses correctly break the loop
+      else:
+        print("\nWrong, have another guess")
+        guesses = guesses+1
+
+main()
